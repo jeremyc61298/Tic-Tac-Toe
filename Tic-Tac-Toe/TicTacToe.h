@@ -44,3 +44,4 @@ int playTicTacToe(SOCKET, std::string, std::string, std::string, int);
 int serverMain(int, char *argv[], std::string);
 int clientMain(int, char *argv[], std::string);
 int getIPAddressInfo(char*, char*);
+char* getBroadcastAddress();

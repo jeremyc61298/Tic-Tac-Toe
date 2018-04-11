@@ -57,6 +57,9 @@
     <ClCompile Include="wait.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="getBroadcastAddress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TicTacToe.h">

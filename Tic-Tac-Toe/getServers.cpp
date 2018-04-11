@@ -44,6 +44,7 @@ Task 3: Add code here that will send the TicTacToe_QUERY message to the broadcas
 /****			
 Task 4a: Add code here that will receive a response to the broadcast message
 ****/		
+		len = UDP_recv(s, recvBuffer, MAX_RECV_BUF - 1, host, port);
 
 
 		while (status > 0 && len > 0) {
@@ -56,7 +57,18 @@ Task 4b: Inside this while loop, extract a response, which should be a C-string 
 		 (iii) assign the server's port number to serverArray[numServers].port
 		 (iv) increment numServers
 ****/
-
+			if (strncmp(recvBuffer, "Name=", 5) == 0)
+			{
+				char name[MAX_RECV_BUF];
+				for (int i = 5; i < strlen(recvBuffer) || recvBuffer[i] == '\0'; i++)
+				{
+					name[i - 5] = recvBuffer[i];
+				}
+				serverArray[numServers].name = name;
+				serverArray[numServers].host = host;
+				serverArray[numServers].port = port;
+				numServers++;
+			}
 			// Now, we'll see if there is another response.
 			status = wait(s,2,0);
 			if (status > 0)
