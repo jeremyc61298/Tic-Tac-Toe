@@ -24,8 +24,6 @@
     <ClCompile Include="getBroadcastAddress.cpp" />
     <ClCompile Include="getIPAddressInfo.cpp" />
     <ClCompile Include="getServers.cpp" />
-    <ClCompile Include="mainClient.cpp" />
-    <ClCompile Include="mainServer.cpp" />
     <ClCompile Include="passivesock.cpp" />
     <ClCompile Include="playTictacToe.cpp" />
     <ClCompile Include="serverMain.cpp" />

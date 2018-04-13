@@ -27,12 +27,6 @@
     <ClCompile Include="getServers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mainClient.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mainServer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="passivesock.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
